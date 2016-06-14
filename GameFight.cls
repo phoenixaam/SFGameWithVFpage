@@ -1,3 +1,7 @@
+/**
+ * The battle between two units.
+ * We simulate random battles and define the winner unit.
+ */
 public class GameFight {
     public List<String> gameLog;
     
@@ -8,6 +12,13 @@ public class GameFight {
     public GameFight(){
         gameLog = new List<String>();
     }
+	
+	/**
+     * Defines which unit will win in the battle.
+     * @param unit1
+     * @param unit2
+     * @return winner unit
+     */
     public GameFightUnit fight(GameFightUnit unit1, GameFightUnit unit2) {
 
         while (unit1.getHealthPoint() > 0 && unit2.getHealthPoint() > 0) {

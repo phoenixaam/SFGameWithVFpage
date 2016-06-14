@@ -1,3 +1,8 @@
+/**
+ * There is the Unit participating in the battle.
+ * Unit has own life (healthPoint) and strength (damageMin, damageMax).
+ */
+
 public class GameFightUnit implements Comparable{
     private String name;
     private Integer healthPoint;
@@ -45,27 +50,5 @@ public class GameFightUnit implements Comparable{
 
     public void setDamageMax(Integer damageMax) {
         this.damageMax = damageMax;
-    }
-    
-    public Integer compareTo(Object o) {
-        GameFightUnit compareToUnit = (GameFightUnit)o;
-
-        Integer returnValue = name.compareTo(compareToUnit.getName());
-
-        if (returnValue == 0){
-            if (healthPoint>compareToUnit.getHealthPoint()){
-                 returnValue = 1;
-            } else if (healthPoint<compareToUnit.getHealthPoint()){
-                returnValue = -1;
-            }
-        }
-        return returnValue;
-    }
-    
-    public override String toString() {
-        return 'GameFightUnit{' +
-                'name="' + name + '\"' +
-                ', healthPoint=' + healthPoint +
-                '}';
     }
 }
