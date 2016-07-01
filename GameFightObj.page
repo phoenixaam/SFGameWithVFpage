@@ -1,4 +1,4 @@
-<apex:page controller="GameFightController" sidebar="false">
+<apex:page controller="GameFightObjController" sidebar="false">
     <apex:form >
         <apex:pageBlock title="Game parameters" id="game_parameters">
             <apex:pageBlockSection columns="4">

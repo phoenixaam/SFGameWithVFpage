@@ -2,18 +2,17 @@
  * There is the Unit participating in the battle.
  * Unit has own life (healthPoint) and strength (damageMin, damageMax).
  */
-
-public class GameFightUnit implements Comparable{
+public class GameFightObjUnit{
     private String name;
     private Integer healthPoint;
     private Integer damageMin;
     private Integer damageMax;
     
-    public GameFightUnit(){
+    public GameFightObjUnit(){
         
     }
 
-    public GameFightUnit(String name, Integer healthPoint, Integer damageMin, Integer damageMax) {
+    public GameFightObjUnit(String name, Integer healthPoint, Integer damageMin, Integer damageMax) {
         this.name = name;
         this.healthPoint = healthPoint;
         this.damageMin = damageMin;
@@ -51,4 +50,6 @@ public class GameFightUnit implements Comparable{
     public void setDamageMax(Integer damageMax) {
         this.damageMax = damageMax;
     }
+
+
 }
